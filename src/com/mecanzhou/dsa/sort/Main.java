@@ -51,8 +51,8 @@ public class Main {
      * 冒泡排序： 0~N-1次，每次从0开始，最大往后放，复杂度On2
      */
     private static void bubbleSort(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - 1 - i; j++) {
+        for (int i = arr.length - 1; i >0 ; i--) {
+            for (int j = 0; j < i; j++) {
                 if (arr[j ] > arr[j+1]) {
                     swap(arr, j, j + 1);
                 }
